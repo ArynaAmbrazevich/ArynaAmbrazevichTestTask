@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         int[] numbersArray = {1, 2, 3, 4, 5, 6};
         numberOperations();
-        stringComparison();
-        getEvenNumbersFromArray(numbersArray);
+//        stringComparison();
+//        getEvenNumbersFromArray(numbersArray);
     }
 
     public static void numberOperations() {
@@ -17,7 +17,7 @@ public class Main {
         int y = in.nextInt();
         System.out.println("x * y = " + x*y);
         System.out.println("x / y = " + x/y);
-        System.out.println("x + y = " + x+y);
+        System.out.println("x + y = " + (x+y));
         System.out.println("x - y = " + (x-y));
         if (x > y) {
             System.out.println("x > y");
@@ -28,22 +28,22 @@ public class Main {
         }
     }
 
-    public static void stringComparison() {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите первую строку");
-        String a = in.nextLine();
-        System.out.println("Введите вторую строку");
-        String b = in.nextLine();
-        if (a.equals(b)) {
-            System.out.println("Строки идентичны");
-        } else System.out.println("Строки не идентичны");
-    }
-
-    public static void getEvenNumbersFromArray(int [] seqArray) {
-        for (int element : seqArray) {
-            if (element % 2 == 0) {
-                System.out.println(element);
-            }
-        }
-    }
+//    public static void stringComparison() {
+//        Scanner in = new Scanner(System.in);
+//        System.out.println("Введите первую строку");
+//        String a = in.nextLine();
+//        System.out.println("Введите вторую строку");
+//        String b = in.nextLine();
+//        if (a.equals(b)) {
+//            System.out.println("Строки идентичны");
+//        } else System.out.println("Строки не идентичны");
+//    }
+//
+//    public static void getEvenNumbersFromArray(int [] seqArray) {
+//        for (int element : seqArray) {
+//            if (element % 2 == 0) {
+//                System.out.println(element);
+//            }
+//        }
+//    }
 }
